@@ -32,7 +32,7 @@ pipeline{
 
         steps{
             script{withSonarQubeEnv(credentialsId: 'sonar-api') {
-                    sh "mvn clean package sonar:sonarS"
+                    sh "mvn clean package sonar:sonar"
     // some block
 }}
                 
